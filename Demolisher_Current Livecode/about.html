@@ -1,0 +1,142 @@
+<p><b><font size="14">DEMOLISHER</font></b></p>
+<p>Edit, Play and Render .demo files recorded in Cryptic Studios games</p>
+<p></p>
+<p><b><font size="12">Games you can make .demo files with:</font></b></p>
+<p>Champions Online <a>http://co.perfectworld.com/</a></p>
+<p>Neverwinter <a>http://nw.perfectworld.com/</a></p>
+<p>Star Trek Online <a>http://sto.perfectworld.com/</a></p>
+<p></p>
+<p><b><font size="12">To Record a .demo file:</font></b></p>
+<p>Play one of the games.</p>
+<p>Type <i><font color="#008000">/demo_record yourDemoName </font></i>into the game's chat window</p>
+<p><font color="#FF0000">recording demo </font>should appear on screen</p>
+<p></p>
+<p><b><font size="12">To stop recording:</font></b></p>
+<p>Type <i><font color="#008000">/demo_record_stop </font></i> into the game's chat window and press return.</p>
+<p>A text file will be saved to your game folder's <i>/Live/demos/</i> directory with the name you gave it and the <i>.demo</i> extension.</p>
+<p></p>
+<p><b><font size="12">Find .demo files on your PC:</font></b></p>
+<p>Type <i>"Live/demos"</i> into the Search field of the Windows Start menu.</p>
+<p>The path is typically something like:</p>
+<p> <i>"C:\Program Files (x86)\Cryptic Studios\Champions Online\Live\demos"</i></p>
+<p></p>
+<p><b><font size="12">Tell Demolisher where your .demo files are:</font></b></p>
+<p>Drag a .demo file to the Demolisher.exe icon or onto it's open window.</p>
+<p></p>
+<p><b><font size="12">Tell Windows to open .demo with Demolisher by default:</font></b></p>
+<p>Right click a .demo file in Windows Explorer and choose Properties from the menu.</p>
+<p>Choose Change from the "Opens With" option and browse to Demolisher.exe</p>
+<p></p>
+<p>If this Demolisher.exe does not work with your file, try the default method.</p>
+<p><b><font size="12">Default Playback:</font></b></p>
+<p>Run the game's launcher and choose <b>Options</b> </p>
+<p>Enter  <i><font color="#008000">-demoplay yourDemoName.demo </font></i>into the Advanced Command Line: </p>
+<p>Login and hit play button to watch playback and/or edit your demo.</p>
+<p></p>
+<p>Demolisher is freeware</p>
+<p>All content that Demolisher intends  to interface with is copyright </p>
+<p>Cryptic Studios, Inc.  and  Perfect World Entertainment, Inc. and subject to their terms.</p>
+<p>http://www.perfectworld.com/about/terms</p>
+<p></p>
+<p>Demolisher  is made with the open source LiveCode rapid application development environment <a>http://livecode.com/download/</a></p>
+<p>The current Livecode project file: <b>Demolisher_current.livecode </b>is included for editing.</p>
+<p></p>
+<p><b><font size="12">Helpful Links</font></b></p>
+<p><b>Neverwinter Forums</b></p>
+<p>Perfect World Trailer team demo_record tutorial Livestream <a>http://nw-forum.perfectworld.com/showthread.php?436531</a></p>
+<p>Demo_record thread <a>http://nw-forum.perfectworld.com/showthread.php?83951</a></p>
+<p></p>
+<p><b>Champions Online Forums</b></p>
+<p>Demo_record sticky thread <a>http://co-forum.perfectworld.com/showthread.php?t=100884</a></p>
+<p>Demo file data details <a>http://co-forum.perfectworld.com/showthread.php?t=195491</a></p>
+<p></p>
+<p><b>Star Trek Online Forums</b></p>
+<p>Old and long Demo_record thread <a>http://sto-forum.perfectworld.com/showthread.php?t=134131</a></p>
+<p></p>
+<p><b>Soriedem's Demo_Record Tutorials for Star Trek Online</b></p>
+<p>Introduction <a>http://youtu.be/oERNQXr_cx8</a></p>
+<p>Controls &amp; Camera Movement <a>http://youtu.be/YIofb07NDrU</a></p>
+<p>Easy Path &amp; Points <a>http://youtu.be/YOAyX4yh01w</a></p>
+<p>From Demo To Trailer <a>http://youtu.be/sn5_-xHGNMo</a></p>
+<p></p>
+<p>TimTom's Camera Path Tutorials Tutorials for Star Trek Online</p>
+<p>The Basics <a>http://youtu.be/V8LYm9PiWsU</a></p>
+<p>Easy Path <a>http://youtu.be/s0tiIeJVDhA</a></p>
+<p>Orbit and Look Around Cameras <a>http://youtu.be/X6DyXt0BNXk</a></p>
+<p>Normal Path <a>http://youtu.be/YA_CtRnRc8U</a></p>
+<p>Follow and Shadow Camera <a>http://youtu.be/KkYeqfWAcwI</a></p>
+<p>Advanced Tricks <a>http://youtu.be/aaz-_4-_QsI</a></p>
+<p></p>
+<p>___________________________________________</p>
+<p><b>VERSION HISTORY </b></p>
+<p><b>Version 0009b May 03 2015</b></p>
+<p>DemolisherExecScript.txt wasn't saving properly. Fixed.</p>
+<p></p>
+<p><b>Version 0009 May 02 2015</b></p>
+<p>More UI changes</p>
+<p>Extracted Entities no longer use EntityRef , duplicates are avoided</p>
+<p>Player Entity replacement works (so far)</p>
+<p>Extracting costumes appears to work</p>
+<p>Rendering now creates a folder and renders to that folder</p>
+<p></p>
+<p><b>Version 0008 April 30 2015</b></p>
+<p>UI Expansion</p>
+<p>Using Livecode Cards for About and Demo viewing</p>
+<p>.demo Processing exports Characters to file characterName_ContainerID.txt</p>
+<p>(May change that to _EntityRef.txt if that works better?)</p>
+<p>Empty Zone can be chosen for "blue screen" -ish effect</p>
+<p>Open files are closed after I/O (they remained open before)</p>
+<p>Using Launch instead of Shell so that there is no blocking when running a demo (ie, couldn't use Demolisher while GameClient.exe was running)</p>
+<p>New alpha versioning system iterates when I edit version prop or reset stack and appends with current date</p>
+<p></p>
+<p>Added but incomplete and super crashy, so disabled for this release.</p>
+<p>Entity replacement</p>
+<p>Costume Replacement</p>
+<p></p>
+<p><b>Version 0007 August 20 2013</b></p>
+<p>Narrowed down some commands</p>
+<p>UI changes</p>
+<p></p>
+<p><b>Version 0006 August 19 2013</b></p>
+<p>Layout Overhaul</p>
+<p>Writes "DemolisherExecScript.text" to /Live/Localdata to execute during play mode</p>
+<p></p>
+<p><b>Version 0005 August 18 2013</b></p>
+<p>Added Image rendering options</p>
+<p></p>
+<p>Version 0004 August 16 2013</p>
+<p>Changed Name to Demolisher</p>
+<p>Added a tabbed group  to step users through stages of  .demo use.</p>
+<p>Added text formatting to instructions.</p>
+<p>Added this Version window.</p>
+<p>Replaced About window.</p>
+<p></p>
+<p>Version 0003 April 27, 2013</p>
+<p>CO_DemoReader released into the wild.</p>
+<p>Fixed the drag and drop broken in the last release</p>
+<p>Hopefully file association works, its a mystery.</p>
+<p></p>
+<p>Version 0002 April 27, 2013</p>
+<p>* Drag and Drop from desktop to exe or the program window will</p>
+<p>  + find the path to the Live directory containing the demo file and demos directory</p>
+<p>  + launch GameClient.exe and the demo in -demoplay mode</p>
+<p>  </p>
+<p>* Setting this program to be the default program for '.demo' files will launch GameClient.exe in -demoplay mode and edit the file.</p>
+<p>* should work from any installed directory and theoretically with other Cryptic Studios, Inc Games </p>
+<p></p>
+<p>version 001 April 25 2013 </p>
+<p>Reads ".demo" files  from "C:\Program Files (x86)\Cryptic Studios\Champions Online\Live\demos"</p>
+<p>parses '.demo' file for Entities and displays raw data</p>
+<p></p>
+<p>Executes "C:\Program Files (x86)\Cryptic Studios\Champions Online\Live\GameClient.exe"</p>
+<p>with command line option '-demoplay' and the chosen file</p>
+<p>Version 0001</p>
+<p>* reads from /Champions Online/Live/demos/</p>
+<p>* filter for Entities </p>
+<p>* view raw data</p>
+<p>* run Champions Online -demoplay</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
